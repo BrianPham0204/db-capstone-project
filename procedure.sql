@@ -28,7 +28,6 @@ BEGIN
 END;
 DELIMITER;
 
-DROP PROCEDURE GetMaxQuantity;
 CALL GetMaxQuantity();
 
 SET @id = 1;
@@ -44,7 +43,6 @@ BEGIN
 END//
 DELIMITER ;
 
-DROP PROCEDURE CancelOrder;
 SET SQL_SAFE_UPDATES = 0;
 CALL CancelOrder(166);
 
